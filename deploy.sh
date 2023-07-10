@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run build
+yarn run build
 
 # navigate into the build output directory
 cd dist
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:ardyutama/ardyutama.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/ardyutama/hpp-project.git main:gh-pages
+git push -f https://github.com/ardyutama/hpp-project.git master:gh-pages
 
 cd -
